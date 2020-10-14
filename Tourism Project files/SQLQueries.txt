@@ -1,0 +1,31 @@
+--SQL Queries
+
+SET search_path TO Tourism_Management_System;
+
+--1) Retrieve the packages within a particular price range
+SELECT * FROM package WHERE amount >= 15000 and amount <= 20000;
+
+--2) Show the list of top 5 packages based on the number of users who selected it.
+SELECT COUNT(pack.packageid), pack.title, pack.duration, pack.no_of_people, pack.amount FROM package AS pack JOIN (SELECT * FROM Booking_for_package) AS bfp ON(bfp.PackageID = pack.PackageID) GROUP BY pack.title, pack.duration, pack.amount, pack.no_of_people ORDER BY COUNT(pack.packageID) DESC;
+
+--3) View list of all the tourist spots at a particular location.
+SELECT ts."Name", ts.season, ts.ratings, ts.address, ts.pincode, l.city,l.state FROM tourist_spots AS ts JOIN location AS l ON ts.pincode = l.pincode WHERE l.city = 'Kullu'
+
+--4) View the tourist spots included in “abc” package.
+SELECT p.title, p.duration, p.no_of_people, p.amount, ts."Name", ts.season, ts.ratings, ts.address, ts.pincode, l.city,l.state FROM tourist_spots AS ts JOIN package_includes_spots
+pt ON(pt.spotid = ts.spotid) JOIN package AS p ON (p.packageid = pt.packageid) JOIN location AS l ON ts.pincode = l.pincode WHERE p.title = 'Manali Tour'
+
+--6) View all the restaurants that serve “only veg” food.
+SELECT r."Name", r.phone, r.foodType, r.ratings, r.address, r.pincode, l.city,l.state FROM restaurant AS r JOIN location AS l ON r.pincode = l.pincode WHERE r.foodType = 'VEG'
+
+--7) Retrieve list of all the restaurants at “abc” location.
+SELECT r."Name", r.phone, r.foodType, r.ratings, r.address, r.pincode, l.city,l.state FROM restaurant AS r JOIN location AS l ON r.pincode = l.pincode WHERE l.city = 'Ahmedabad'
+
+--8) View all the restaurants that have “Chinese” cuisine included in their menu.
+SELECT r."Name", r.phone, r.foodType, r.ratings, rc.cuisines, r.address, r.pincode, l.city,l.state FROM restaurant AS r JOIN location AS l ON r.pincode = l.pincode JOIN restaurant_cuisines AS rc ON r.rid = rc.rid WHERE rc.cuisines = 'Chinese'
+
+--9) Retrieve all the hotels that are situated at location “xyz”.
+SELECT h."Name", h.phone, h.foodType, h.ratings, h.address, h.pincode, l.city,l.state FROM hotel AS h JOIN location AS l ON h.pincode = l.pincode WHERE l.city = 'Ahmedabad'
+
+--10) Retrieve list of hotels that are providing “xyz” services.
+SELECT h."Name", h.phone, h.foodType, h.ratings,hs.services, h.address, h.pincode, l.city,l.state FROM hotel AS h JOIN location AS l ON h.pincode = l.pincode JOIN hotel_services AS hs ON h.hotelid = hs.hotelid WHERE hs.services = 'Gym'
