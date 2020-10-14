@@ -1,0 +1,533 @@
+-----INSERT QUERIES--------------------------------------------------------------------------------------------------
+--Location-----------------------------------------------------------------------------------------------------------------
+insert into LOCATION (PINCODE,CITY,"state") values (143006,'Amritsar','Punjab');
+insert into LOCATION (PINCODE,CITY,"state") values (175131,'Kullu','Himachal Pradesh');
+insert into LOCATION (PINCODE,CITY,"state") values (190001,'Srinagar','Jammu and Kashmir');
+insert into LOCATION (PINCODE,CITY,"state") values (212111,'Allahabad','Uttar Pradesh');
+insert into LOCATION (PINCODE,CITY,"state") values (221106,'Varanasi','Uttar Pradesh');
+insert into LOCATION (PINCODE,CITY,"state") values (226001,'Lucknow','Uttar Pradesh');
+insert into LOCATION (PINCODE,CITY,"state") values (246445,'Rudra Prayag','Uttarakhand');
+insert into LOCATION (PINCODE,CITY,"state") values (282001,'Agra','Uttar Pradesh');
+insert into LOCATION (PINCODE,CITY,"state") values (345001,'Jaisalmer','Rajasthan');
+insert into LOCATION (PINCODE,CITY,"state") values (360001,'Rajkot','Gujarat');
+insert into LOCATION (PINCODE,CITY,"state") values (362268,'Veraval','Gujarat');
+insert into LOCATION (PINCODE,CITY,"state") values (380027,'Ahmedabad','Gujarat');
+insert into LOCATION (PINCODE,CITY,"state") values (393151,'Narmada','Gujarat');
+insert into LOCATION (PINCODE,CITY,"state") values (400012,'Mumbai','Maharashtra');
+insert into LOCATION (PINCODE,CITY,"state") values (410401,'Pune','Maharashtra');
+insert into LOCATION (PINCODE,CITY,"state") values (560004,'Bangalore','Karnataka');
+
+--RESTAURANTS----------------------------------------------------------------------------------------------------------
+--Agra
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Jahanpanah', 9898456721, 'VEG', 4.5, 'E 23, Shopping Arcade, Sadar Bazaar, Agra Cantt, Agra', 282001);
+--Ahmedabad
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Huber & Holly', 9889855455, 'VEG', 2.5, 'Shreekunj Mandapam, Beside Golden Tulip Bunglows & Tulip Citadel, Manekbaug, Ambavadi, Ahmedabad', 380027);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES (' Cryo Lab', 9876543210, 'VEG', 3, 'Ground Floor, Arjun Avenue, Opposite Samartheshwar Mahadev, Law Garden, Ahmedabad', 380027);
+--Allahabad
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Subway', 6826589432, 'VEG', 4.5, '207/53, Mahatma Gandhi Marg, Civil Lines, Allahabad', 212111);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Tandoor Restaurant', 7954215885, 'NON-VEG', 4, '17/33, Mahatama Gandhi Marg, Civil Lines, Allahabad', 212111);
+--Bangalore
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Three Dots & A Dash', 7878252364, 'NON-VEG', 3.5, '840/1,100 Feet Road, Metro Pillar 56-57, Indiranagar, Bangalore', 560004);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('ECHOES Koramangala', 9465853246, 'BOTH', 3, '44, 4th B Cross, Koramangala 5th Block, Bangalore', 560004);
+--MUmbai
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('The American Joint', 7985556233, 'NON-VEG', 2.5, 'The Ahcl Homes Tower, Chikuwadi New Link Road, Borivali West, Mumbai', 400012);
+--Varanasi
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Open Hand Cafe', 9898569825, 'VEG', 3, 'B1/128-3, Dumraun Bagh Colony, Assi Ghat, Varanasi', 221106);
+
+--Restaurant Cuisines--------------------------------------------------------------------------------------------------------
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (1, 'North Indian');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (1, 'Continental');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (1, 'Chinese');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (2, 'Chinese');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (2, 'Continental');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (2, 'Italian');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (2, 'North Indian');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (3, 'Pizza');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (3, 'Italian');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (3, 'North Indian');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (4, 'Fast Food');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (4, 'American');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (4, 'Healthy Food');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (5, 'North Indian');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (5, 'Chinese');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (6, 'European');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (6, 'Continental');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (6, 'Chinese');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (7, 'Continental');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (7, 'American');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (7, 'Italian');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (7, 'North Indian');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (7, 'Chinese');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (7, 'Cafe');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (8, 'American');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (8, 'Burger');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (8, 'Salad');
+INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (9, 'Cafe');
+
+--USER-----------------------------------------------------------------------------------------------------------------------
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Siddhant','Shah','sid123@gmail.com',9988776655,TRUE,'M',21);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Anurag','Kakkan','anu123@gmail.com',9876543210,TRUE,'M',23);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Nihar','Shah','nihu123@gmail.com',9764318520,TRUE,'M',22);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Viral','Gandhi','viru123@gmail.com',9873216540,TRUE,'M',25);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Riya','Soni','riya456@gmail.com',9876512340,TRUE,'F',25);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Rutvi','Sukhadia','rutu456@gmail.com',9871245630,TRUE,'F',24);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Nirmal','Kashyap','nir789@gmail.com',8877991440,TRUE,'M',29);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Rahul','Patel','prahul1221@gmail.com',8798546521,TRUE,'M',30);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Priya','Angel','angel111@gmail.com',8679451237,TRUE,'F',19);
+INSERT INTO "User" (Fname,Lname,Email,Phone,IsActive,Gender,Age) VALUES ('Nora','Fatehi','nora888@gmail.com',9999888801,TRUE,'F',28);
+
+--CoPassenger------------------------------------------------------------------------------------------------------------------
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (1,'Raj','Patel','raja111@gmail.com',9988776601,'M',28);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (1,'Sunny','Shah','sun151@gmail.com',9988746651,'M',25);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (1,'Harshal','Modi','modi456@gmail.com',9879879871,'M',26);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (2,'Kashyap','Patel','kapu145@gmail.com',8465622617,'M',24);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (2,'Bhavik','Parmar','bhavu114@gmail.com',8765695669,'M',25);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (3,'Yagn','Purohit','yagu@gmail.com',7850489115,'M',22);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (4,'Raju','Japani','raju785@gmail.com',6765462659,'M',26);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (5,'Anjali','Patel','anju@gmail.com',7865491236,'F',28);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (6,'Kavya','Dave','kd1998@gmail.com',9457776601,'F',29);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (7,'Sahil','Panchal','sp777@gmail.com',8915765487,'M',28);
+INSERT INTO Copassenger (UID,Fname,Lname,Email,Phone,Gender,Age) VALUES (7,'Simran','Solanki','simi198@gmail.com',9985676601,'F',30);
+insert into COPASSENGER (UID,Fname,Lname,Email,Phone,Gender,Age) values (8,'Vedant','Savani','vsavani457@gmail.com',8888776601,'M',28);
+insert into COPASSENGER (UID,Fname,Lname,Email,Phone,Gender,Age) values (8,'Meet','Mankodi','mm777@gmail.com',8811778401,'M',18);
+insert into COPASSENGER (UID,Fname,Lname,Email,Phone,Gender,Age) values (9,'Swastik','Agarwal','swas45878@gmail.com',7845942266,'M',32);
+insert into COPASSENGER (UID,Fname,Lname,Email,Phone,Gender,Age) values (10,'Hina','Khan','hinak123@gmail.com',7849561236,'F',30);
+insert into COPASSENGER (UID,Fname,Lname,Email,Phone,Gender,Age) values (10,'Dipika','Singh','dipu46@gmail.com',9874856981,'F',34);
+insert into COPASSENGER (UID,Fname,Lname,Email,Phone,Gender,Age) values (10,'Ranveer','Singh','ran788@gmail.com',7859817815,'M',29);
+
+
+--GUIDE-----------------------------------------------------------------------------------------------------------------------
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Pooran','Singh','theps4@gmail.com',9977884455,'M',40,'Dargah Homatpura, Fateh Singh Road, Bharariwal, Amritsar, Punjab',143006);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Param','Singh','psingh@gmail.com',6645789155,'M',28,'Gill Medical Store, Fateh Singh Road, Mule Chak, Amritsar, Punjab',143006);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Sachin','Bhide','sbhide457@gmail.com',8899745614,'M',30,'TLH Forest Way Cottage, Dhungri, Manali, Kullu, Himachal Pradesh',175131);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Jay','Prajapati','jp57@gmail.com',8123445614,'M',34,'Near sunset point road , Srinagar, J & K',190001);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Jiimy','Nisham','nishamji89@gmail.com',7548691265,'M',34,'Shree Ganesh Communication, Bhitari Industrial Area, Varanasi, Uttar Pradesh',221106);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Suresh','Raina','sraina@gmail.com',667844785,'M',26,'Kedarnath, Ukhimath, Rudraprayag, Uttarakhand',246445);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Virat','Kohli','vk123@gmail.com',8978456912,'M',32,'Taj Mahal-Beauty of India, Taj Mahal Road, Forest Area, Agra, Uttar Pradesh',282001);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Ajay','Bishnoi','ajjub78@gmail.com',8795764101,'M',33,'Baba Ramdev Mandir, Tanot Road, Jaisalmer Sub-District, Jaisalmer, Rajasthan',345001);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Abhi','Baluni','abhib111@gmail.com',7845152356,'M',41,'Janta Society Sim Shala, Somnath, Gir Somnath, Gujarat',362268);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Karan','Thakker','kt14@gmail.com',9988451601,'M',30,'Abhay Ghat, Juna Vadaj, Ahmedabad, Gujarat',380027);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Shanker','Desai','shivd88@gmail.com',7984561534,'M',56,'Shree Munivrat Swami Jain Derasar, Keshav Nagar Road, Sabarmati, Ahmedabad, Gujarat',380027);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES('Akshar','Patel','akpatel45@gmail.com',7845561255,'M',26,'Aarogya Van, Kevadiya, Nandod, Narmada, Gujarat',393151);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Shikhar','Dhoni','sd88@gmail.com',7985561534,'M',46,'Near Bandra Station,Mumbai,Maharastra',400012);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Ganesh','Gaitonde','gg0007@gmail.com',9988990007,'M',35,'128 ,pragati House, Budhwar Peth,Pune, Maharashtra',410401);
+INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('Shakil','Narayan','koishak789@gmail.com',9874587648,'M',29,'Hotel Nityanand, Lokmanya Tilak Road, Bhangarwadi, Lonavala, Pune, Maharashtra',410401);
+
+--Tourist Spot-------------------------------------------------------------------------------------------------------------------
+----
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Golden Temple','All',4.9,'Golden Temple Rd, Atta Mandi, Katra Ahluwalia, Amritsar, Punjab',143006);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Manali','Winter',4.7,'Rotang Pass Road, Manali, Kullu, Himachal Pradesh',175131);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Srinagar','Winter',4.7,'Srinagar,J & K', 190001);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Allahabad','All',4.7,'Allahabad, Uttar Pradesh',212111);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Dashashwamedh Ghat','Winter',4.6,'Dashashwamedh Ghat Rd, Ghats of varanasi, Godowlia, Varanasi, Uttar Pradesh',221106);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Kedarnath Temple','Pre-winter',4.8,'Kedarnath, Rudra Prayag, Uttarakhand',246445);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Taj Mahal','All',4.9,'Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh',282001);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Jaisalmer Fort','All',4.2,'Near Gopa CHOCK, Khejer Para, Manak Chowk, Amar Sagar Pol, Jaisalmer, Rajasthan',345001);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Somnath Temple','Winter',4.3,'Somnath Mandir Rd, Veraval, Gujarat',362268);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Sabarmati Aashram','All',4.5,'Gandhi Ashram, Gandhi Smarak Sangrahalaya, Ahmedabad, Gujarat',380027);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Statue Of Unity','All',4.7,'Sardar Sarovar Dam, Kevadiya Village Narmada, Gujarat',393151);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Get Way Of India','All',4.3,'Mumbai, Maharashtra',400012);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Lonavla Hills','All',4.3,'Lonavla , Maharashtra',410401);
+
+--Hotels-----------------------------------------------------------------------------------------------------------------------
+--Amritsir
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ramada by Wyndham Amritsar',1835025555,'BOTH',3.9,'117 Hall Bazaar, Punjab',143006);
+--Manali
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Thomas Villa',9855004767,'VEG',3.5,'Simsa Village, Manali, Himachal Pradesh',175131);
+--J & K
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ahdoos Hotel',7889464612,'VEG',4.1,'Residency road, Regal Chowk, Raj Bagh, Srinagar, Jammu and
+Kashmir',190001);
+--Srinagar
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Billberry Hotel', 9865476521, 'NON-VEG', 4, 'Ghat No. 17, Nehru Park, Dal Lake', 190001);
+--Praygraj (UP)
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Kashi',9878451532,'VEG',3.8,'No.74-A, Kamla Nehru Rd, opposite City Post Office, Johnston Ganj,
+Prayagraj, Uttar Pradesh',212111);
+--Varanasi
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Sai International',7889456124,'VEG',2.9,'Chandpur Industrial State Near Chandpur Dignostic, Varanasi,
+Uttar Pradesh',221106);
+--Lucknow
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The White Hotels', 6868626585, 'VEG', 3.5, '181/1, Opposite CDRI Campus, Sitapur Road lucknow u.p', 226001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Levana',8989456512,'NON-VEG',4.1,' 6, VS Marg, Narpatkhera, Lalbagh, Lucknow, Uttar
+Pradesh',226001);
+--Kedarnath
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Punjab Sindh Awas',7858495615,'BOTH',3.0,'Main Market, near Kedarnath Temple, Kedarnath,
+Uttarakhand',246445);
+--Agra
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Anmol Hotel Pvt.Ltd', 9898565844, 'VEG', 3.5, '8180 Street No.-6,Arakashan Road,Agra', 282001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('BB Palace-A Boutique Hotel', 8655855687, 'VEG', 3, '2638-2642 Gurudwara Road,Agra', 282001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('ITC Mughal, A Luxury Collection Hotel',5624021700,'BOTH',4.5,' Itc Mughal, Fatehabad Rd, Tajganj, Agra, Uttar Pradesh',282001);
+--Jaisalmer
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Jaisalkot - A Luxury Boutique Hotel',9116010801,'VEG',4.6,' Kuldhara Turn, Off, Jaisalmer - Sam - Dhanana Rd, Jaisalmer, Rajasthan',345001);
+--Rajkot
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Chouki Dhani', 9465813587, 'VEG', 3, 'Near All India Radio Tower, Jamnagar Road, Rajkot, Gujarat 360001', 360001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Imperial Palace',7894556218,'VEG',4.4,'Dr Yagnik Rd, Jagnath Plot, Rajkot, Gujarat',360001);
+--Somnath
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Fern Residency',2876225200,'VEG',4.1,'Talala Road, Veraval Bypass Corner Behind Somnath Railway Station, Somnath',362268);
+--Ahmedabad
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ahmedabad Inn',9878456512,'BOTH',4.5,'Vastrapur,Ahmedabad',380027);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hyatt Ahmedabad',8794561251,'BOTH',4.8,'Opp Ahmedabad One Mall,Vastrapur,Ahmedabad',380027);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Metropole Hotel',7889451575,'BOTH',4.2,'Near R.T.O. Circle, Subhash Bridge, Corner, Keshav Nagar Rd, Ahmedabad, Gujarat',380027);
+--Narmada
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Statue of Unity Tent City 1',9797949494,'VEG',4.5,'Sardar Sarovar Dam, Tent City-1, Dyke-4, Site, Kevadia, Gujarat',393151);
+--Mumbai
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Astoria Hotel', 9726549956, 'BOTH', 4, 'J. Tata Road, Churchgate Reclamation, Opp Eros Cinema mumbai', 400012);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Central Hotel', 9894517223, 'BOTH', 4.5, 'Ashirwad Enclave, Lakhimi Path, Jonali, R.G.Baruah Road', 400012);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('ITC Grand Central, A Luxury Collection Hotel',8978152345,'BOTH',4.6,'287, Dr, Dr Baba Saheb Ambedkar Rd, Parel, Mumbai, Maharashtra',400012);
+--Pune
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Cosset-Comfort And Cusine',7859485625,'BOTH',4.2,'Mumbai Pune Road,Opp Hotel Rama Krishna, Lonavala',410401);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Meritas Picaddle Resort',9689521111,'BOTH',4.2,' Plot No. 137 A, Opp, Old Mumbai - Pune Hwy, Khandala, Lonavla, Maharashtra',410401);
+--Bangalore
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Aurick Hotel', 6658498756, 'NON-VEG', 3, '15th Cross, 35th Main,6th Phase, JP Nagar', 560004);
+
+--Hotel_Services----------------------------------------------------------------------------------------------------------------
+-------
+INSERT INTO hotel_services(hotelid, services) VALUES (1, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (1, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (1, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (2, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (2, 'Gym');
+INSERT INTO hotel_services(hotelid, services) VALUES (2, 'Laundry Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (2, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (3, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (3, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (3, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (4, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (4, 'Parking Facilities');
+INSERT INTO hotel_services(hotelid, services) VALUES (4, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (4, 'Swimming Pool');
+INSERT INTO hotel_services(hotelid, services) VALUES (4, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (5, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (5, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (5, 'Doctor on Call');
+INSERT INTO hotel_services(hotelid, services) VALUES (5, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (6, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (6, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (6, 'Taxi Services');
+INSERT INTO hotel_services(hotelid, services) VALUES (7, 'Internet Access');
+INSERT INTO hotel_services(hotelid, services) VALUES (7, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (7, 'Locker Room Facility');
+INSERT INTO hotel_services(hotelid, services) VALUES (7, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (8, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (8, 'Medical Assistance Available');
+INSERT INTO hotel_services(hotelid, services) VALUES (8, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (9, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (9, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (9, 'Gym');
+INSERT INTO hotel_services(hotelid, services) VALUES (10, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (10, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (10, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (11, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (11, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (11, 'Barbecue Area');
+INSERT INTO hotel_services(hotelid, services) VALUES (12, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (12, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (12, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (13, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (13, 'Gym');
+INSERT INTO hotel_services(hotelid, services) VALUES (13, 'Laundry Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (13, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (14, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (14, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (14, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (15, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (15, 'Parking Facilities');
+INSERT INTO hotel_services(hotelid, services) VALUES (15, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (15, 'Swimming Pool');
+INSERT INTO hotel_services(hotelid, services) VALUES (15, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (16, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (16, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (16, 'Doctor on Call');
+INSERT INTO hotel_services(hotelid, services) VALUES (16, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (17, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (17, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (17, 'Taxi Services');
+INSERT INTO hotel_services(hotelid, services) VALUES (18, 'Internet Access');
+INSERT INTO hotel_services(hotelid, services) VALUES (18, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (18, 'Locker Room Facility');
+INSERT INTO hotel_services(hotelid, services) VALUES (18, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (19, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (19, 'Medical Assistance Available');
+INSERT INTO hotel_services(hotelid, services) VALUES (19, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (20, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (20, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (20, 'Gym');
+INSERT INTO hotel_services(hotelid, services) VALUES (21, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (21, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (21, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (22, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (22, 'Free Internet');
+INSERT INTO hotel_services(hotelid, services) VALUES (23, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (23, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (23, 'Taxi Services');
+INSERT INTO hotel_services(hotelid, services) VALUES (24, 'Internet Access');
+INSERT INTO hotel_services(hotelid, services) VALUES (24, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (24, 'Locker Room Facility');
+INSERT INTO hotel_services(hotelid, services) VALUES (24, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (25, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (25, 'Medical Assistance Available');
+INSERT INTO hotel_services(hotelid, services) VALUES (25, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (26, 'Room Service');
+INSERT INTO hotel_services(hotelid, services) VALUES (26, 'Restaurant');
+INSERT INTO hotel_services(hotelid, services) VALUES (26, 'Gym');
+
+--ROOMS-----------------------------------------------------------------------------------------------------------------------
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 002, 'AC', 3, 6, 6000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 003, 'AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 004, 'AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 005, 'AC', 1, 2, 2500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 006, 'NON-AC', 2, 2, 2000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 007, 'NON-AC', 3, 6, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 008, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 009, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (1, 010, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 002, 'AC', 3, 6, 6500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 005, 'AC', 1, 2, 2500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 006, 'NON-AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 007, 'NON-AC', 3, 6, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 008, 'NON-AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 009, 'NON-AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (2, 010, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (3, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (3, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (3, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (3, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (3, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (4, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (4, 002, 'AC', 2, 4, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (4, 003, 'AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (4, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (4, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (5, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (5, 002, 'AC', 3, 6, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (5, 003, 'AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (5, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (5, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (6, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (6, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (6, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (6, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (6, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (7, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (7, 002, 'AC', 2, 4, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (7, 003, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (7, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (7, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (8, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (8, 002, 'AC', 3, 6, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (8, 003, 'AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (8, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (8, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (9, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (9, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (9, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (9, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (9, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (10, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (10, 002, 'AC', 3, 6, 6500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (10, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (10, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (10, 005, 'AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (11, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (11, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (11, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (11, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (11, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (12, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (12, 002, 'AC', 2, 4, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (12, 003, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (12, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (12, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (13, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (13, 002, 'AC', 3, 6, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (13, 003, 'AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (13, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (13, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (14, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (14, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (14, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (14, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (14, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (15, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (15, 002, 'AC', 2, 4, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (15, 003, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (15, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (15, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (16, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (16, 002, 'AC', 3, 6, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (16, 003, 'AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (16, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (16, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (17, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (17, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (17, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (17, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (17, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (18, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (18, 002, 'AC', 3, 6, 6500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (18, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (18, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (18, 005, 'AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (19, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (19, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (19, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (19, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (19, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (20, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (20, 002, 'AC', 3, 6, 6500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (20, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (20, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (20, 005, 'AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (21, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (21, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (21, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (21, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (21, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (22, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (22, 002, 'AC', 2, 4, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (22, 003, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (22, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (22, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (23, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (23, 002, 'AC', 3, 6, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (23, 003, 'AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (23, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (23, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (24, 001, 'AC', 2, 2, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (24, 002, 'AC', 1, 2, 1500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (24, 003, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (24, 004, 'AC', 2, 4, 5000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (24, 005, 'NON-AC', 1, 2, 2500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (25, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (25, 002, 'AC', 2, 4, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (25, 003, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (25, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (25, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (26, 001, 'AC', 2, 2, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (26, 002, 'AC', 3, 6, 5500, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (26, 003, 'AC', 2, 4, 4000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (26, 004, 'NON-AC', 2, 4, 3000, 'AVAILABLE');
+INSERT INTO ROOM(HotelID, Room_no, "Type", Beds, Capacity, Rate, Status) VALUES (26, 005, 'NON-AC', 1, 2, 1500, 'AVAILABLE');
+
+--ROOM FACILITIES------------------------------------------------------------------------------------------------------------
+-----------
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (1, 1, 'Cable TV');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (1, 1, 'Hot/Cold Running water');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (2, 2, 'Cable TV');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (2, 2, 'Hot/Cold Running water');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (2, 2, 'Refrigerator');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (3, 3, 'Cable TV');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (3, 3, 'Hairdryer (on request)');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (3, 3, 'Hot/Cold Running water');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (5, 4, 'Cable TV');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (5, 4, 'Ironing Board');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (5, 4, 'Hot/Cold Running water');
+INSERT INTO Room_Facilities(HotelId,RoomNo, Facility) VALUES (5, 4, 'Breakfast Available');
+
+--PACKAGE-----------------------------------------------------------------------------------------------------------------------
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Manali Tour', 9,8, TRUE,64000);
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Srinagar Tour',4,2,TRUE,19500);
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Varansi Tour',4,4,TRUE,15000);
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Kedarnath Tour',6,2,TRUE,20000);
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Taj Mahal Tour',2,4,TRUE,12000);
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Jaisalmer Tour',2,6,TRUE,12500);
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Somnath Tour',2,4,TRUE,6000);
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Mumbai Tour',2,4,TRUE,10000);
+INSERT INTO Package(Title, Duration, No_of_people, isActive, Amount) VALUES ('Lonavla Tour',2,6,TRUE,12000);
+
+--Package_Hotel---------------------------------------------------------------------------------------------
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(1, 2, 4);
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(2, 4, 1);
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(3, 6, 3);
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(4, 9, 1);
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(5, 10, 2);
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(6, 13, 2);
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(7, 16, 1);
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(8, 22, 3);
+INSERT INTO Package_Includes_Hotels(PackageId, HotelID, RoomNo) VALUES(9, 25, 1);
+
+--Package Tourist Spots-------------------------------------------------------------------------------------
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(1, 2);
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(2, 3);
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(3, 5);
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(4, 6);
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(5, 7);
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(6, 8);
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(7, 9);
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(8, 12);
+INSERT INTO Package_Includes_Spots(PackageId, SpotID) VALUES(9, 13);
+
+
+--Package GUIDE---------------------------------------------------------------------------------------------
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(1, 3);
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(2, 4);
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(3, 5);
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(4, 6);
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(5, 7);
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(6, 8);
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(7, 9);
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(8, 13);
+INSERT INTO Package_Includes_Guides(PackageId, GUIDEID) VALUES(9, 15);
+
+--Booking---------------------------------------------------------------------------------------------
+INSERT INTO Booking(UserID, TripStart_Date, TripEnd_Date, Amount) VALUES(1, '2020-12-08', '2020-12-08', 64000);
+INSERT INTO Booking(UserID, TripStart_Date, TripEnd_Date, Amount) VALUES(2, '2020-10-11', '2020-12-08', 1500);
+INSERT INTO Booking(UserID, TripStart_Date, TripEnd_Date, Amount) VALUES(4, '2020-11-20', '2020-11-22', 12000);
+INSERT INTO Booking(UserID, TripStart_Date, TripEnd_Date, Amount) VALUES(5, '2020-12-08', '2020-12-08', 64000);
+INSERT INTO Booking(UserID, TripStart_Date, TripEnd_Date, Amount) VALUES(9, '2020-12-30', '2021-01-01', 12000);
+INSERT INTO Booking(UserID, TripStart_Date, TripEnd_Date, Amount) VALUES(10, '2020-10-22', '2020-10-24', 10000);
+
+--Booking CoPassenger---------------------------------------------------------------------------------
+INSERT INTO Booking_CoPassenger(BID, UserID, Fname, Lname) VALUES(1, 1, 'Raj', 'Patel');
+INSERT INTO Booking_CoPassenger(BID, UserID, Fname, Lname) VALUES(1, 1, 'Sunny', 'Shah');
+INSERT INTO Booking_CoPassenger(BID, UserID, Fname, Lname) VALUES(3, 4, 'Raju', 'Japani');
+INSERT INTO Booking_CoPassenger(BID, UserID, Fname, Lname) VALUES(4, 5, 'Anjali', 'Patel');
+INSERT INTO Booking_CoPassenger(BID, UserID, Fname, Lname) VALUES(5, 9, 'Swastik', 'Agarwal');
+INSERT INTO Booking_CoPassenger(BID, UserID, Fname, Lname) VALUES(6, 10, 'Hina', 'Khan');
+INSERT INTO Booking_CoPassenger(BID, UserID, Fname, Lname) VALUES(6, 10, 'Dipika', 'Singh');
+INSERT INTO Booking_CoPassenger(BID, UserID, Fname, Lname) VALUES(6, 10, 'Ranveer', 'Singh');
+
+--Booking Package-------------------------------------------------------------------------------------
+INSERT INTO BOOKING_FOR_PACKAGE(BID, PackageID) VALUES (1,1);
+INSERT INTO BOOKING_FOR_PACKAGE(BID, PackageID) VALUES (3,5);
+INSERT INTO BOOKING_FOR_PACKAGE(BID, PackageID) VALUES (4,1);
+INSERT INTO BOOKING_FOR_PACKAGE(BID, PackageID) VALUES (5,9);
+
+--Booking Hotel-------------------------------------------------------------------------------------
+INSERT INTO Booking_FOR_HOTEL(BID, HOTELID, ROOMNO) VALUES (2,5,5);
+INSERT INTO Booking_FOR_HOTEL(BID, HOTELID, ROOMNO) VALUES (2,21,3);
+
+
+
+--SQL QUERY
+--select title, duration, no_of_people, amount, "Name", address, roomno, phone, foodtype, ratings, pincode from Package JOIN (SELECT * from Package_Includes_Hotels as pih JOIN Hotel ON(pih.HotelID = Hotel.HotelID)) as pi ON(Package.PackageID = pi.PackageID);
+--QUERY TO FIND THE LIST OF PEOPLE WHO BOOKED PACKAGE 1.
+--select * from Booking JOIN (select * from Booking_For_Package JOIN (select * from Package where PackageID = 1) as pa ON (Booking_For_Package.PackageID = pa.PackageID)) as BookP ON (Booking.BID = BookP.BID);
