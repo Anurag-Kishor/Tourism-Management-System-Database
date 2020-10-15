@@ -19,20 +19,20 @@ insert into LOCATION (PINCODE,CITY,"state") values (560004,'Bangalore','Karnatak
 
 --RESTAURANTS----------------------------------------------------------------------------------------------------------
 --Agra
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Jahanpanah', 9898456721, 'VEG', 4.5, 'E 23, Shopping Arcade, Sadar Bazaar, Agra Cantt, Agra', 282001);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Jahanpanah', 9898456721, 'VEG', 4.5, 'E 23, Shopping Arcade, Sadar Bazaar, Agra Cantt', 282001);
 --Ahmedabad
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Huber & Holly', 9889855455, 'VEG', 2.5, 'Shreekunj Mandapam, Beside Golden Tulip Bunglows & Tulip Citadel, Manekbaug, Ambavadi, Ahmedabad', 380027);
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES (' Cryo Lab', 9876543210, 'VEG', 3, 'Ground Floor, Arjun Avenue, Opposite Samartheshwar Mahadev, Law Garden, Ahmedabad', 380027);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Huber & Holly', 9889855455, 'VEG', 2.5, 'Shreekunj Mandapam, Beside Golden Tulip Bunglows & Tulip Citadel, Manekbaug, Ambavadi', 380027);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES (' Cryo Lab', 9876543210, 'VEG', 3, 'Ground Floor, Arjun Avenue, Opposite Samartheshwar Mahadev, Law Garden', 380027);
 --Allahabad
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Subway', 6826589432, 'VEG', 4.5, '207/53, Mahatma Gandhi Marg, Civil Lines, Allahabad', 212111);
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Tandoor Restaurant', 7954215885, 'NON-VEG', 4, '17/33, Mahatama Gandhi Marg, Civil Lines, Allahabad', 212111);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Subway', 6826589432, 'VEG', 4.5, '207/53, Mahatma Gandhi Marg, Civil Lines', 212111);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Tandoor Restaurant', 7954215885, 'NON-VEG', 4, '17/33, Mahatama Gandhi Marg, Civil Lines', 212111);
 --Bangalore
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Three Dots & A Dash', 7878252364, 'NON-VEG', 3.5, '840/1,100 Feet Road, Metro Pillar 56-57, Indiranagar, Bangalore', 560004);
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('ECHOES Koramangala', 9465853246, 'BOTH', 3, '44, 4th B Cross, Koramangala 5th Block, Bangalore', 560004);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Three Dots & A Dash', 7878252364, 'NON-VEG', 3.5, '840/1,100 Feet Road, Metro Pillar 56-57, Indiranagar', 560004);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('ECHOES Koramangala', 9465853246, 'BOTH', 3, '44, 4th B Cross, Koramangala 5th Block', 560004);
 --MUmbai
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('The American Joint', 7985556233, 'NON-VEG', 2.5, 'The Ahcl Homes Tower, Chikuwadi New Link Road, Borivali West, Mumbai', 400012);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('The American Joint', 7985556233, 'NON-VEG', 2.5, 'The Ahcl Homes Tower, Chikuwadi New Link Road, Borivali West', 400012);
 --Varanasi
-INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Open Hand Cafe', 9898569825, 'VEG', 3, 'B1/128-3, Dumraun Bagh Colony, Assi Ghat, Varanasi', 221106);
+INSERT INTO restaurant ("Name", phone, foodtype, ratings, address, pincode) VALUES ('Open Hand Cafe', 9898569825, 'VEG', 3, 'B1/128-3, Dumraun Bagh Colony, Assi Ghat', 221106);
 
 --Restaurant Cuisines--------------------------------------------------------------------------------------------------------
 INSERT INTO Restaurant_cuisines(RID, CUISINES) VALUES (1, 'North Indian');
@@ -115,67 +115,62 @@ INSERT INTO GUIDE (Fname,Lname,Email,Phone,Gender,Age,Address,Pincode) VALUES ('
 
 --Tourist Spot-------------------------------------------------------------------------------------------------------------------
 ----
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Golden Temple','All',4.9,'Golden Temple Rd, Atta Mandi, Katra Ahluwalia, Amritsar, Punjab',143006);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Manali','Winter',4.7,'Rotang Pass Road, Manali, Kullu, Himachal Pradesh',175131);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Golden Temple','All',4.9,'Golden Temple Rd, Atta Mandi, Katra Ahluwalia',143006);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Manali','Winter',4.7,'Rotang Pass Road, Manali',175131);
 insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Srinagar','Winter',4.7,'Srinagar,J & K', 190001);
 insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Allahabad','All',4.7,'Allahabad, Uttar Pradesh',212111);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Dashashwamedh Ghat','Winter',4.6,'Dashashwamedh Ghat Rd, Ghats of varanasi, Godowlia, Varanasi, Uttar Pradesh',221106);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Kedarnath Temple','Pre-winter',4.8,'Kedarnath, Rudra Prayag, Uttarakhand',246445);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Taj Mahal','All',4.9,'Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh',282001);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Jaisalmer Fort','All',4.2,'Near Gopa CHOCK, Khejer Para, Manak Chowk, Amar Sagar Pol, Jaisalmer, Rajasthan',345001);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Somnath Temple','Winter',4.3,'Somnath Mandir Rd, Veraval, Gujarat',362268);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Sabarmati Aashram','All',4.5,'Gandhi Ashram, Gandhi Smarak Sangrahalaya, Ahmedabad, Gujarat',380027);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Statue Of Unity','All',4.7,'Sardar Sarovar Dam, Kevadiya Village Narmada, Gujarat',393151);
-insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Get Way Of India','All',4.3,'Mumbai, Maharashtra',400012);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Dashashwamedh Ghat','Winter',4.6,'Dashashwamedh Ghat Rd, Ghats of varanasi, Godowlia',221106);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Kedarnath Temple','Pre-winter',4.8,'Kedarnath, Rudra Prayag',246445);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Taj Mahal','All',4.9,'Dharmapuri, Forest Colony, Tajganj',282001);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Jaisalmer Fort','All',4.2,'Near Gopa CHOCK, Khejer Para, Manak Chowk, Amar Sagar Pol',345001);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Somnath Temple','Winter',4.3,'Somnath Mandir Rd',362268);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Sabarmati Aashram','All',4.5,'Gandhi Ashram, Gandhi Smarak Sangrahalaya',380027);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Statue Of Unity','All',4.7,'Sardar Sarovar Dam, Kevadiya Village',393151);
+insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Gate Way Of India','All',4.3,'Mumbai, Maharashtra',400012);
 insert into TOURIST_SPOTS("Name",season,ratings,address,pincode) values ('Lonavla Hills','All',4.3,'Lonavla , Maharashtra',410401);
 
 --Hotels-----------------------------------------------------------------------------------------------------------------------
 --Amritsir
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ramada by Wyndham Amritsar',1835025555,'BOTH',3.9,'117 Hall Bazaar, Punjab',143006);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ramada by Wyndham Amritsar',1835025555,'BOTH',3.9,'117 Hall Bazaar',143006);
 --Manali
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Thomas Villa',9855004767,'VEG',3.5,'Simsa Village, Manali, Himachal Pradesh',175131);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Thomas Villa',9855004767,'VEG',3.5,'Simsa Village',175131);
 --J & K
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ahdoos Hotel',7889464612,'VEG',4.1,'Residency road, Regal Chowk, Raj Bagh, Srinagar, Jammu and
-Kashmir',190001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ahdoos Hotel',7889464612,'VEG',4.1,'Residency road, Regal Chowk, Raj Bagh',190001);
 --Srinagar
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Billberry Hotel', 9865476521, 'NON-VEG', 4, 'Ghat No. 17, Nehru Park, Dal Lake', 190001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Billberry Hotel', 9865476521, 'NON-VEG', 4, 'Ghat No. 17, Nehru Park', 190001);
 --Praygraj (UP)
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Kashi',9878451532,'VEG',3.8,'No.74-A, Kamla Nehru Rd, opposite City Post Office, Johnston Ganj,
-Prayagraj, Uttar Pradesh',212111);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Kashi',9878451532,'VEG',3.8,'No.74-A, Kamla Nehru Rd, opposite City Post Office, Johnston Ganj',212111);
 --Varanasi
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Sai International',7889456124,'VEG',2.9,'Chandpur Industrial State Near Chandpur Dignostic, Varanasi,
-Uttar Pradesh',221106);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Sai International',7889456124,'VEG',2.9,'Chandpur Industrial State Near Chandpur Dignostic',221106);
 --Lucknow
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The White Hotels', 6868626585, 'VEG', 3.5, '181/1, Opposite CDRI Campus, Sitapur Road lucknow u.p', 226001);
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Levana',8989456512,'NON-VEG',4.1,' 6, VS Marg, Narpatkhera, Lalbagh, Lucknow, Uttar
-Pradesh',226001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The White Hotels', 6868626585, 'VEG', 3.5, '181/1, Opposite CDRI Campus, Sitapur Road', 226001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hotel Levana',8989456512,'NON-VEG',4.1,' 6, VS Marg, Narpatkhera, Lalbagh',226001);
 --Kedarnath
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Punjab Sindh Awas',7858495615,'BOTH',3.0,'Main Market, near Kedarnath Temple, Kedarnath,
-Uttarakhand',246445);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Punjab Sindh Awas',7858495615,'BOTH',3.0,'Main Market, near Kedarnath Temple',246445);
 --Agra
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Anmol Hotel Pvt.Ltd', 9898565844, 'VEG', 3.5, '8180 Street No.-6,Arakashan Road,Agra', 282001);
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('BB Palace-A Boutique Hotel', 8655855687, 'VEG', 3, '2638-2642 Gurudwara Road,Agra', 282001);
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('ITC Mughal, A Luxury Collection Hotel',5624021700,'BOTH',4.5,' Itc Mughal, Fatehabad Rd, Tajganj, Agra, Uttar Pradesh',282001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Anmol Hotel Pvt.Ltd', 9898565844, 'VEG', 3.5, '8180 Street No.-6,Arakashan Road', 282001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('BB Palace-A Boutique Hotel', 8655855687, 'VEG', 3, '2638-2642 Gurudwara Road', 282001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('ITC Mughal, A Luxury Collection Hotel',5624021700,'BOTH',4.5,' Itc Mughal, Fatehabad Rd, Tajganj',282001);
 --Jaisalmer
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Jaisalkot - A Luxury Boutique Hotel',9116010801,'VEG',4.6,' Kuldhara Turn, Off, Jaisalmer - Sam - Dhanana Rd, Jaisalmer, Rajasthan',345001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Jaisalkot - A Luxury Boutique Hotel',9116010801,'VEG',4.6,' Kuldhara Turn, Off, Jaisalmer - Sam - Dhanana Rd',345001);
 --Rajkot
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Chouki Dhani', 9465813587, 'VEG', 3, 'Near All India Radio Tower, Jamnagar Road, Rajkot, Gujarat 360001', 360001);
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Imperial Palace',7894556218,'VEG',4.4,'Dr Yagnik Rd, Jagnath Plot, Rajkot, Gujarat',360001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Chouki Dhani', 9465813587, 'VEG', 3, 'Near All India Radio Tower, Jamnagar Road', 360001);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Imperial Palace',7894556218,'VEG',4.4,'Dr Yagnik Rd, Jagnath Plot',360001);
 --Somnath
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Fern Residency',2876225200,'VEG',4.1,'Talala Road, Veraval Bypass Corner Behind Somnath Railway Station, Somnath',362268);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Fern Residency',2876225200,'VEG',4.1,'Talala Road, Veraval Bypass Corner Behind Somnath Railway Station',362268);
 --Ahmedabad
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ahmedabad Inn',9878456512,'BOTH',4.5,'Vastrapur,Ahmedabad',380027);
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hyatt Ahmedabad',8794561251,'BOTH',4.8,'Opp Ahmedabad One Mall,Vastrapur,Ahmedabad',380027);
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Metropole Hotel',7889451575,'BOTH',4.2,'Near R.T.O. Circle, Subhash Bridge, Corner, Keshav Nagar Rd, Ahmedabad, Gujarat',380027);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Ahmedabad Inn',9878456512,'BOTH',4.5,'Vastrapur',380027);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Hyatt Ahmedabad',8794561251,'BOTH',4.8,'Opp Ahmedabad One Mall',380027);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('The Metropole Hotel',7889451575,'BOTH',4.2,'Near R.T.O. Circle, Subhash Bridge, Corner, Keshav Nagar Rd',380027);
 --Narmada
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Statue of Unity Tent City 1',9797949494,'VEG',4.5,'Sardar Sarovar Dam, Tent City-1, Dyke-4, Site, Kevadia, Gujarat',393151);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Statue of Unity Tent City 1',9797949494,'VEG',4.5,'Sardar Sarovar Dam, Tent City-1, Dyke-4, Site',393151);
 --Mumbai
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Astoria Hotel', 9726549956, 'BOTH', 4, 'J. Tata Road, Churchgate Reclamation, Opp Eros Cinema mumbai', 400012);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Astoria Hotel', 9726549956, 'BOTH', 4, 'J. Tata Road, Churchgate Reclamation, Opp Eros Cinema', 400012);
 INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Central Hotel', 9894517223, 'BOTH', 4.5, 'Ashirwad Enclave, Lakhimi Path, Jonali, R.G.Baruah Road', 400012);
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('ITC Grand Central, A Luxury Collection Hotel',8978152345,'BOTH',4.6,'287, Dr, Dr Baba Saheb Ambedkar Rd, Parel, Mumbai, Maharashtra',400012);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('ITC Grand Central, A Luxury Collection Hotel',8978152345,'BOTH',4.6,'287, Dr, Dr Baba Saheb Ambedkar Rd, Parel',400012);
 --Pune
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Cosset-Comfort And Cusine',7859485625,'BOTH',4.2,'Mumbai Pune Road,Opp Hotel Rama Krishna, Lonavala',410401);
-INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Meritas Picaddle Resort',9689521111,'BOTH',4.2,' Plot No. 137 A, Opp, Old Mumbai - Pune Hwy, Khandala, Lonavla, Maharashtra',410401);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Cosset-Comfort And Cusine',7859485625,'BOTH',4.2,'Mumbai Pune Road,Opp Hotel Rama Krishna',410401);
+INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Meritas Picaddle Resort',9689521111,'BOTH',4.2,' Plot No. 137 A, Opp, Old Mumbai - Pune Hwy, Khandala',410401);
 --Bangalore
 INSERT INTO HOTEL("Name", Phone, FoodType, Ratings, Address, Pincode) VALUES ('Aurick Hotel', 6658498756, 'NON-VEG', 3, '15th Cross, 35th Main,6th Phase, JP Nagar', 560004);
 
@@ -527,7 +522,3 @@ INSERT INTO Booking_FOR_HOTEL(BID, HOTELID, ROOMNO) VALUES (2,21,3);
 
 
 
---SQL QUERY
---select title, duration, no_of_people, amount, "Name", address, roomno, phone, foodtype, ratings, pincode from Package JOIN (SELECT * from Package_Includes_Hotels as pih JOIN Hotel ON(pih.HotelID = Hotel.HotelID)) as pi ON(Package.PackageID = pi.PackageID);
---QUERY TO FIND THE LIST OF PEOPLE WHO BOOKED PACKAGE 1.
---select * from Booking JOIN (select * from Booking_For_Package JOIN (select * from Package where PackageID = 1) as pa ON (Booking_For_Package.PackageID = pa.PackageID)) as BookP ON (Booking.BID = BookP.BID);
